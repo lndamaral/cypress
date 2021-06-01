@@ -1,0 +1,5 @@
+{
+  "baseUrl": "https://telehealth-aai-dev.auth.us-east-1.amazoncognito.com/login?client_id=31r9mtkic86t7b3votmps27m4&response_type=code&scope=openid&redirect_uri=https%3A%2F%2Fwww.th-dev-develop.anthemai.io%2F",
+  "username": "leonardo.amaral@toptal.com",
+  "password": "12345678Aa!"
+}
