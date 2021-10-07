@@ -24,17 +24,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('signIn', () => {
-
-    const environment = `environment.${Cypress.env("environment")}`
-
-    cy.log(environment)
-
-    cy.fixture(environment).then((data) => {
-        cy.visit(data.baseUrl)
-        cy.get("div[class*=visible-lg] #signInFormUsername").type(data.username)
-        cy.get("div[class*=visible-lg] #signInFormPassword").type(data.password)
-        cy.get("div[class*=visible-lg] input[name='signInSubmitButton']").click()
-        cy.get("h1:contains('Hello, ')", { timeout: 10000 })
-    })
-})
+Cypress.Commands.add('init', () => {
+    cy.visit(Cypress.env(Cypress.env('environment')).baseUrl);
+});

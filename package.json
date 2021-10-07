@@ -1,9 +1,15 @@
 {
     "scripts": {
-        "cypress:open": "cypress open"
+        "cypress:open": "cypress open",
+        "linter": "eslint .",
+        "linter:fix": "eslint . --fix",
+        "test:local": "npx cypress run --browser chrome --headed --env environment=dev",
+        "test:dev": "npx cypress run --env environment=dev"
     },
     "devDependencies": {
         "cypress-xpath": "^1.6.2",
+        "eslint": "^7.32.0",
+        "eslint-plugin-cypress": "^2.12.1",
         "mochawesome": "^6.2.2",
         "uuid": "^8.3.2"
     }
