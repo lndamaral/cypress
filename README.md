@@ -1,5 +1,5 @@
 # dependencies
-    - npm i
+- npm i
 
 # open test runner
 - npm run cypress:open 
